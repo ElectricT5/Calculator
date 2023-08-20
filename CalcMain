@@ -1,0 +1,32 @@
+import time
+
+print("[1] Add, [2] Subtract, [3] Multiply, [4] Divide")
+time.sleep(1.3)
+
+ask: int = int(input("Which operation do you want to use: "))
+
+if ask == 1:
+        a = int(input("First Number: "))
+        b = int(input("Second Number: "))
+        c = a + b
+        print(a, '+', b, '=', c)
+elif ask == 2:
+    a = int(input("First Number: "))
+    b = int(input("Second Number: "))
+    c = a - b
+    print(a, '-', b, '=', c)
+elif ask == 3:
+    a = int(input("First Number: "))
+    b = int(input("Second Number: "))
+    c = a * b
+    print(a, 'x', b, '=', c)
+elif ask == 4:
+    a = int(input("First Number: "))
+    b = int(input("Second Number: "))
+    c = a / b
+    print(a, '÷', b, '=', c)
+elif ask > 4 :
+    print("Wrong Value Entered")
+
+# else:
+#  print("Wrong Value Entered")
